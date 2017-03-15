@@ -1,0 +1,9 @@
+{
+    "name": "vuejs-boilerplate",
+    "version": "0.0.1",
+    "description": "The very first thing you need for vue.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wesley100002001/vuejs-boilerplate.git"
+    }
+}
