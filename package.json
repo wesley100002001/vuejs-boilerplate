@@ -6,6 +6,10 @@
         "type": "git",
         "url": "https://github.com/wesley100002001/vuejs-boilerplate.git"
     },
+    "license": "MIT",
+    "author": {
+        "name": "Wesley Lin"
+    },
     "dependencies": {
         "bootstrap": "^3.3.7",
         "font-awesome": "^4.7.0",
