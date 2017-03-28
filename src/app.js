@@ -5,6 +5,13 @@ var app = new Vue({
   },
   methods: {
     sendTestRequest: () => {
+      Vue.http.get('/someUrl').then(response => {
+        // get body data
+        this.someData = response.body;
+      }, response => {
+        console.log(response);
+        // error callback
+      });
       alert('Hello ' + this.name + '!');
     }
   }
