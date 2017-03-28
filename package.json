@@ -1,19 +1,23 @@
 {
-    "name": "vuejs-boilerplate",
-    "version": "0.0.1",
-    "description": "The very first thing you need for vue.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wesley100002001/vuejs-boilerplate.git"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "Wesley Lin"
-    },
-    "dependencies": {
-        "bootstrap": "^3.3.7",
-        "font-awesome": "^4.7.0",
-        "jquery": "^3.1.1",
-        "vue": "^2.2.4"
-    }
+  "name": "vuejs-boilerplate",
+  "version": "0.0.1",
+  "description": "The very first thing you need for vue.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesley100002001/vuejs-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Wesley Lin"
+  },
+  "scripts": {
+    "dev": "node node_modules/.bin/webpack-dev-server --history-api-fallback --hot --inline --progress"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "vue": "^2.2.4",
+    "webpack-dev-server": "^2.4.0"
+  }
 }
