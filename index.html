@@ -20,6 +20,11 @@
       <button class="btn-no-use" v-on:click="sendTestRequest">Test</button>
       <p>The button above has been clicked times.</p>
     </div>
+    <ul id="example-v-for">
+      <li v-for="item in items">
+        {{ item.message }}
+      </li>
+    </ul>
   </div>
   <script src="/src/app.js"></script>
 </body>
