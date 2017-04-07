@@ -1,5 +1,6 @@
 // Readonly key
 var airtableKey = 'keyFcWwzNgkQUNPBh';
+const maxSize = 3;
 
 var app = new Vue({
   el: '#app',
@@ -13,7 +14,7 @@ var app = new Vue({
   methods: {
     sendTestRequest: () => {
       Vue.http.headers.common['Authorization'] = 'Bearer '.concat(airtableKey);
-      Vue.http.get('https://api.airtable.com/v0/appoqs69fhkq2Z5PG/Places').then(response => {
+      Vue.http.get('https://api.airtable.com/v0/apppL3V4r4Tqf0nhR/Events').then(response => {
         // get body data
         console.log(response);
         this.someData = response.body;
@@ -22,6 +23,18 @@ var app = new Vue({
         // error callback
       });
       alert('Hello ' + this.name + '!');
+    },
+    getEvents: () => {
+      Vue.http.headers.common['Authorization'] = 'Bearer '.concat(airtableKey);
+      var reqUrl = 'https://api.airtable.com/v0/apppL3V4r4Tqf0nhR/Events?maxRecords='.concat(maxSize).concat('&view=Main');
+      Vue.http.get(reqUrl).then(response => {
+        // get body data
+        console.log(response);
+        this.someData = response.body;
+      }, response => {
+        console.log(response);
+        // error callback
+      });
     }
   }
 });
